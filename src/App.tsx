@@ -1,11 +1,11 @@
-import React from 'react';
-import { Logo } from './Components/Atoms/Logo/Logo';
+import Overlay from './Components/Molecules/Overlay/Overlay';
 
 const App = () => {
   return (
-    <div>
-      <Logo />
-    </div>
+    <>
+      <Overlay />
+      <div>hello</div>
+    </>
   );
 };
 
