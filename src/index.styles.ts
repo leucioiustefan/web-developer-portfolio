@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
     body {
          overflow-x: hidden;
-         overflow-y: hidden
+         overflow-y: hidden;
+         background: rgba(0, 0, 0, 0.8);
     }
 `;
 export default GlobalStyle;
