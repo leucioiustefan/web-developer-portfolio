@@ -7,31 +7,31 @@ const SocialMedia = () => {
   return (
     <S.List>
       <S.ListItem>
-        <a
+        <S.Anchor
           href='https://www.facebook.com/stefan.leucioiu.1/'
           rel='noreferrer'
           target='_blank'
         >
           <Facebook />
-        </a>
+        </S.Anchor>
       </S.ListItem>
       <S.ListItem>
-        <a
+        <S.Anchor
           href='https://github.com/leucioiustefan'
           rel='noreferrer'
           target='_blank'
         >
           <Github />
-        </a>
+        </S.Anchor>
       </S.ListItem>
       <S.ListItem>
-        <a
+        <S.Anchor
           href='https://www.linkedin.com/in/stefan-leucioiu-32b489164/'
           rel='noreferrer'
           target='_blank'
         >
           <Linkedin />
-        </a>
+        </S.Anchor>
       </S.ListItem>
     </S.List>
   );
