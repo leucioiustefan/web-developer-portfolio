@@ -1,22 +1,17 @@
 import { useState, useEffect } from 'react';
+import { countdown } from '../../../utils';
 import { Facebook } from '../../Atoms/Facebook/Facebook';
 import { Github } from '../../Atoms/Github/Github';
 import { Linkedin } from '../../Atoms/Linkedin/Linkedin';
 import * as S from './social-media.styles';
+export { countdown } from '../../../utils';
 
 const SocialMedia = () => {
   const [timer, setTimer] = useState<number>(2);
 
   //Timer with interval cleanup on dismount
   useEffect(() => {
-    const interval: any = setInterval(() => {
-      if (timer) {
-        const next = timer - 1;
-        if (next === 0) return setTimer(0);
-        return setTimer(next);
-      }
-      return clearInterval(interval);
-    }, 1000);
+    const interval = countdown(timer, setTimer);
     return () => clearInterval(interval);
   }, [timer]);
 
