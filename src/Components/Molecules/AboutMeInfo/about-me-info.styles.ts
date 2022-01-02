@@ -4,7 +4,8 @@ export const Container = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  color: white;
+  width: 836px;
+  height: 150px;
   & h2 {
     color: #cacaca;
     font-size: 1.7rem;
