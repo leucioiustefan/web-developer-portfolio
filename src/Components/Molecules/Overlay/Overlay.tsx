@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Logo } from '../../Atoms/Logo/Logo';
-import * as S from './overlay.styles';
 import { countdown } from '../../../utils';
+import * as S from './overlay.styles';
 
 const Overlay = () => {
   const [timer, setTimer] = useState<number>(2);

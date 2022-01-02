@@ -4,7 +4,6 @@ import { Facebook } from '../../Atoms/Facebook/Facebook';
 import { Github } from '../../Atoms/Github/Github';
 import { Linkedin } from '../../Atoms/Linkedin/Linkedin';
 import * as S from './social-media.styles';
-export { countdown } from '../../../utils';
 
 const SocialMedia = () => {
   const [timer, setTimer] = useState<number>(2);
