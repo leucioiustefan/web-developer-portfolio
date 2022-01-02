@@ -21,3 +21,13 @@ export const Container = styled.div`
     padding-bottom: 0.8rem;
   }
 `;
+
+export const Anchor = styled.a`
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  &:hover {
+    background: rgba(154, 154, 154, 0.2);
+  }
+`;

@@ -42,7 +42,17 @@ const AboutMeInfo = () => {
         stdTypingDelay={10}
         cursor={{ show: false }}
       >
-        <h3>Please reach out to me at leucioiu.stefan@yahoo.com.</h3>
+        <h3>
+          Please reach out to me at{' '}
+          <S.Anchor
+            title='Contact Email'
+            href='mailto:leucioiu.stefan@yahoo.com'
+            rel='noreferrer'
+          >
+            leucioiu.stefan@yahoo.com
+          </S.Anchor>
+          .
+        </h3>
       </Typist>
     </S.Container>
   );
