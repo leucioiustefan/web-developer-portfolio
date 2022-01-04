@@ -23,7 +23,7 @@ export const Menu = styled.div<MenuProps>`
     width: 40px;
     border-radius: 3px;
     margin: 7px 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   &:before {
     ${props =>
@@ -44,5 +44,5 @@ export const MiddleLine = styled.div`
   width: 40px;
   border-radius: 3px;
   margin: 10px 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 `;

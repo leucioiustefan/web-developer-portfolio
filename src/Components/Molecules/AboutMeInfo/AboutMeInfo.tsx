@@ -51,7 +51,6 @@ const AboutMeInfo = () => {
           >
             leucioiu.stefan@yahoo.com
           </S.Anchor>
-          .
         </h3>
       </Typist>
     </S.Container>

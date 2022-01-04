@@ -1,32 +1,36 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 100px;
-  height: 100px;
+export const Arrow = styled.div`
   position: relative;
-`;
-
-export const Arrow = styled.em`
-  display: block;
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  top: calc(50% - 18.5px);
-  left: calc(50% - 18px);
-  &:before {
-    content: ' ';
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 2px;
-    background-color: #7a7a7a;
+  left: -5%;
+  cursor: pointer;
+  &:hover {
+    &:before,
+    &:after {
+      margin: 35px 0;
+    }
+    &:before {
+      transform: rotate(70deg);
+    }
+    &:after {
+      transform: rotate(-70deg);
+    }
   }
+  &:before,
   &:after {
-    content: ' ';
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 2px;
-    background-color: #7a7a7a;
+    background: #808080;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 40px;
+    border-radius: 3px;
+    margin: 20px 0;
+    transition: all 0.4s ease-in-out;
+  }
+  &:before {
+    transform: rotate(33deg);
+  }
+  &: after {
+    transform: rotate(-33deg);
   }
 `;
