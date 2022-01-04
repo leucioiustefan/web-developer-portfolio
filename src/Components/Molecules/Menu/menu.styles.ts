@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface MenuProps {
-  isClicked: boolean;
+  active: boolean;
 }
 
 export const Menu = styled.div<MenuProps>`
@@ -9,6 +9,7 @@ export const Menu = styled.div<MenuProps>`
   position: absolute;
   left: 93%;
   bottom: 90%;
+  z-index: 200;
   cursor: pointer;
   transition: all 0.3s ease-in;
   &:hover {
@@ -27,14 +28,14 @@ export const Menu = styled.div<MenuProps>`
   }
   &:before {
     ${props =>
-      props.isClicked ? 'transform: translateY(12px) rotate(135deg)' : ''}
+      props.active ? 'transform: translateY(12px) rotate(135deg)' : ''}
   }
   &:after {
     ${props =>
-      props.isClicked ? 'transform: translateY(-12px) rotate(-135deg)' : ''}
+      props.active ? 'transform: translateY(-12px) rotate(-135deg)' : ''}
   }
   & div {
-    ${props => (props.isClicked ? 'transform: scale(0)' : '')}
+    ${props => (props.active ? 'transform: scale(0)' : '')}
   }
 `;
 
