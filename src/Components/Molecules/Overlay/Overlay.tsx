@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Logo } from '../../Atoms/Logo/Logo';
+import { countdown } from '../../../utils';
 import * as S from './overlay.styles';
 
 const Overlay = () => {
@@ -7,14 +8,7 @@ const Overlay = () => {
 
   //Timer with interval cleanup on dismount
   useEffect(() => {
-    const interval: any = setInterval(() => {
-      if (timer) {
-        const next = timer - 1;
-        if (next === 0) return setTimer(0);
-        return setTimer(next);
-      }
-      return clearInterval(interval);
-    }, 1000);
+    const interval = countdown(timer, setTimer);
     return () => clearInterval(interval);
   }, [timer]);
 

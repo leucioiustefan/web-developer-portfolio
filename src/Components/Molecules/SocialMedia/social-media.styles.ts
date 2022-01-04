@@ -7,7 +7,6 @@ interface ListItemProps {
 export const List = styled.ul`
   list-style: none;
   width: 50px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +43,7 @@ export const Anchor = styled.a`
 `;
 
 export const FollowMe = styled.small`
-  font-size: 10px;
+  font-size: 9px;
   color: #a1a1a1;
   padding: 0 0 10px 5px;
   opacity: 0.6;

@@ -1,13 +1,7 @@
-import Overlay from './Components/Molecules/Overlay/Overlay';
-import SocialMedia from './Components/Molecules/SocialMedia/SocialMedia';
+import AboutMe from './Components/Organisms/AboutMe/AboutMe';
 
 const App = () => {
-  return (
-    <>
-      <Overlay />
-      <SocialMedia />
-    </>
-  );
+  return <AboutMe />;
 };
 
 export default App;
