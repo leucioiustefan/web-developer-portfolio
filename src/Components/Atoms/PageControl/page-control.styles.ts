@@ -4,18 +4,6 @@ export const Arrow = styled.div`
   position: relative;
   left: -5%;
   cursor: pointer;
-  &:hover {
-    &:before,
-    &:after {
-      margin: 35px 0;
-    }
-    &:before {
-      transform: rotate(70deg);
-    }
-    &:after {
-      transform: rotate(-70deg);
-    }
-  }
   &:before,
   &:after {
     background: #808080;
@@ -32,5 +20,17 @@ export const Arrow = styled.div`
   }
   &: after {
     transform: rotate(-33deg);
+  }
+  &:hover {
+    &:before,
+    &:after {
+      margin: 35px 0;
+    }
+    &:before {
+      transform: rotate(70deg);
+    }
+    &:after {
+      transform: rotate(-70deg);
+    }
   }
 `;
