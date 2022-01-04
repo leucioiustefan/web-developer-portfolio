@@ -16,7 +16,7 @@ export const Menu = styled.div<MenuProps>`
   }
   &:before,
   &:after {
-    background: #969696;
+    background: #808080;
     content: '';
     display: block;
     height: 2px;
@@ -39,7 +39,7 @@ export const Menu = styled.div<MenuProps>`
 `;
 
 export const MiddleLine = styled.div`
-  background: #969696;
+  background: #808080;
   height: 2px;
   width: 40px;
   border-radius: 3px;

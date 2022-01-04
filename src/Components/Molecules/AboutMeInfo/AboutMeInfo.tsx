@@ -31,7 +31,7 @@ const AboutMeInfo = () => {
         cursor={{ show: false }}
       >
         <h3>
-          I am looking for a full time remote collaboration with react,
+          I am looking for a full time collaboration with react,
           javascript/typescript, css, graphql/rest.
         </h3>
       </Typist>
