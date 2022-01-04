@@ -3,6 +3,7 @@ import SocialMedia from '../../Molecules/SocialMedia/SocialMedia';
 import AboutMeInfo from '../../Molecules/AboutMeInfo/AboutMeInfo';
 import PageControl from '../../Atoms/PageControl/PageControl';
 import ViewCode from '../../Atoms/ViewCode/ViewCode';
+import Menu from '../../Atoms/Menu/Menu';
 import * as S from './about-me.styles';
 
 const AboutMe = () => {
@@ -10,6 +11,7 @@ const AboutMe = () => {
     <>
       <Overlay />
       <S.Container>
+        <Menu />
         <SocialMedia />
         <AboutMeInfo />
         <PageControl />
