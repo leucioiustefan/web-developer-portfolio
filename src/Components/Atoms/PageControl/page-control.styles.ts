@@ -16,10 +16,10 @@ export const Arrow = styled.div`
     transition: all 0.4s ease-in-out;
   }
   &:before {
-    transform: rotate(33deg);
+    transform: rotate(34deg);
   }
   &: after {
-    transform: rotate(-33deg);
+    transform: rotate(-34deg);
   }
   &:hover {
     &:before,
@@ -27,10 +27,10 @@ export const Arrow = styled.div`
       margin: 35px 0;
     }
     &:before {
-      transform: rotate(70deg);
+      transform: rotate(71deg);
     }
     &:after {
-      transform: rotate(-70deg);
+      transform: rotate(-71deg);
     }
   }
 `;
