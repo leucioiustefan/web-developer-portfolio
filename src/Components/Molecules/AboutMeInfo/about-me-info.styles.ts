@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Anchor = styled.a`
   display: inline-block;
-  color: #fff;
+  color: #e6e6e6;
   text-decoration: none;
   transition: all 0.3s ease-in;
   &:hover {

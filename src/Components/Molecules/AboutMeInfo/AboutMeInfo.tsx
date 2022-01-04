@@ -43,7 +43,7 @@ const AboutMeInfo = () => {
         cursor={{ show: false }}
       >
         <h3>
-          Please reach out to me at{' '}
+          Remotely available UTC−1 to UTC+8.{' '}
           <S.Anchor
             title='Contact Email'
             href='mailto:leucioiu.stefan@yahoo.com'
