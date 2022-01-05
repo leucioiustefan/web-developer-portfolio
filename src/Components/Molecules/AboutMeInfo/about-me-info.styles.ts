@@ -6,6 +6,15 @@ export const Container = styled.div`
   text-align: center;
   width: 836px;
   height: 150px;
+  @media (max-width: 970px) {
+    width: 636px;
+  }
+  @media (max-width: 840px) {
+    width: 536px;
+  }
+  @media (max-width: 720px) {
+    margin: 0 auto;
+  }
   & h2 {
     color: #cacaca;
     font-size: 1.7rem;

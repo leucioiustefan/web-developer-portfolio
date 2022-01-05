@@ -10,6 +10,9 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const ListItem = styled.li<ListItemProps>`
