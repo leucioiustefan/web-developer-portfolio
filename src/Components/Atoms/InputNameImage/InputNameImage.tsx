@@ -1,6 +1,4 @@
-import React from 'react';
-
-const User = () => (
+const InputNameImage = () => (
   <svg
     width='24'
     height='24'
@@ -22,4 +20,4 @@ const User = () => (
   </svg>
 );
 
-export default User;
+export default InputNameImage;

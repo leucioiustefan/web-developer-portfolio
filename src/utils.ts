@@ -11,3 +11,9 @@ export const countdown = (time: number, setTime: (a: number) => void) => {
   }, 1000);
   return interval;
 };
+
+export const renderInputEnum = {
+  name: 'name',
+  email: 'email',
+  message: 'message',
+};
