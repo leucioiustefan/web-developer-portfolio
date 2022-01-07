@@ -13,7 +13,7 @@ interface Iprops {
   val: string;
   type: string;
   innerText?: string;
-  isDisabeled?: any;
+  isDisabled?: any;
 }
 
 const CustomInput = ({
@@ -27,7 +27,7 @@ const CustomInput = ({
   setRenderInput,
   type,
   innerText,
-  isDisabeled,
+  isDisabled,
 }: Iprops) => {
   return (
     <>
@@ -46,7 +46,7 @@ const CustomInput = ({
         }}
       />
       <CustomButton
-        disabeled={isDisabeled}
+        disabled={isDisabled}
         btnType='button'
         clicked={() => {
           setRenderInput();

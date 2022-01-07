@@ -23,7 +23,7 @@ export const Container = styled(animated.div)`
 `;
 
 export const MenuItemsContainer = styled.div`
-  color: white;
+  color: #848484;
   background: #363636;
   width: 600px;
   height: 600px;
@@ -32,4 +32,23 @@ export const MenuItemsContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
+  text-transform: lowercase;
+  cursor: pointer;
+  & h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: #454545;
+      color: #747474;
+    }
+  }
 `;

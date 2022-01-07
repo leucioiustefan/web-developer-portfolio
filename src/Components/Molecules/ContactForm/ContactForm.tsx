@@ -62,7 +62,7 @@ const ContactForm = () => {
             setRenderInput={() => setRenderInput(renderInputEnum.email)}
             type='text'
             innerText='enter your name'
-            isDisabeled={isName.trim() === '' ? true : false}
+            isDisabled={isName.trim() === '' ? true : false}
           />
         )}
         {renderInput === 'email' && (
@@ -77,7 +77,7 @@ const ContactForm = () => {
             setRenderInput={() => setRenderInput(renderInputEnum.message)}
             type='email'
             innerText='now your email'
-            isDisabeled={isEmail.trim() === '' ? true : false}
+            isDisabled={isEmail.trim() === '' ? true : false}
           />
         )}
         {renderInput === 'message' && (
@@ -92,12 +92,12 @@ const ContactForm = () => {
             setRenderInput={setRenderInput}
             type='text'
             innerText='now write your awesome message'
-            isDisabeled={true}
+            isDisabled={true}
           />
         )}
         <CustomButton
           btnType='submit'
-          disabeled={
+          disabled={
             renderInput === 'message' && isMessage.trim() !== '' ? false : true
           }
         >

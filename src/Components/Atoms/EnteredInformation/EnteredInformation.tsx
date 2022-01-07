@@ -9,23 +9,20 @@ interface Iprops {
   yourMessage: string;
 }
 
-const EnteredInformation = ({ yourName, yourEmail, yourMessage }: Iprops) => {
-  return (
-    <S.Container>
-      <S.InfoContainer>
-        <InputNameIcon />
-        <S.Info>{yourName}</S.Info>
-      </S.InfoContainer>
-      <S.InfoContainer>
-        <InputEmailIcon />
-        <S.Info>{yourEmail}</S.Info>
-      </S.InfoContainer>
-      <S.InfoContainer>
-        <InputMessageIcon />
-        <S.Info>{yourMessage}</S.Info>
-      </S.InfoContainer>
-    </S.Container>
-  );
-};
-
+const EnteredInformation = ({ yourName, yourEmail, yourMessage }: Iprops) => (
+  <S.Container>
+    <S.InfoContainer>
+      <InputNameIcon />
+      <S.Info>{yourName}</S.Info>
+    </S.InfoContainer>
+    <S.InfoContainer>
+      <InputEmailIcon />
+      <S.Info>{yourEmail}</S.Info>
+    </S.InfoContainer>
+    <S.InfoContainer>
+      <InputMessageIcon />
+      <S.Info>{yourMessage}</S.Info>
+    </S.InfoContainer>
+  </S.Container>
+);
 export default EnteredInformation;
