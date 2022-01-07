@@ -1,4 +1,4 @@
-const InputNameImage = () => (
+const InputNameIcon = () => (
   <svg
     width='24'
     height='24'
@@ -12,12 +12,7 @@ const InputNameImage = () => (
         fill='#797979'
       />
     </g>
-    <defs>
-      <clipPath id='clip0_2_3'>
-        <rect width='24' height='24' fill='white' />
-      </clipPath>
-    </defs>
   </svg>
 );
 
-export default InputNameImage;
+export default InputNameIcon;
