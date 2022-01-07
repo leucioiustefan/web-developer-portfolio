@@ -8,11 +8,12 @@ interface Iprops {
   name: string;
   isTyping?: boolean | any;
   setIsTyping?: any;
-  setIsName?: any;
+  setVal?: any;
   setRenderInput?: any;
   val: string;
   type: string;
   innerText?: string;
+  isDisabeled?: any;
 }
 
 const CustomInput = ({
@@ -22,10 +23,11 @@ const CustomInput = ({
   isTyping,
   setIsTyping,
   val,
-  setIsName,
+  setVal,
   setRenderInput,
   type,
   innerText,
+  isDisabeled,
 }: Iprops) => {
   return (
     <>
@@ -34,17 +36,17 @@ const CustomInput = ({
         {innerText}
       </S.Label>
       <S.Input
-        required
         name={name}
         value={val}
         type={type}
         id={id}
         onChange={(e: SyntheticEvent) => {
           setIsTyping(true);
-          setIsName((e.target as HTMLInputElement).value);
+          setVal((e.target as HTMLInputElement).value);
         }}
       />
       <CustomButton
+        disabeled={isDisabeled}
         btnType='button'
         clicked={() => {
           setRenderInput();
