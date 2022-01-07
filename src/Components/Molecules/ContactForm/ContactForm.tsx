@@ -33,6 +33,7 @@ const ContactForm = () => {
           setIsEmail('');
           setIsMessage('');
           setIsTyping(false);
+          setRenderInput(renderInputEnum.name);
           console.log(result.text);
         },
         error => {

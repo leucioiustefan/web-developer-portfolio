@@ -18,5 +18,5 @@ export const Info = styled.span`
   display: inline-block;
   margin-left: 10px;
   font-family: 'Monserrat';
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;

@@ -7,6 +7,9 @@ interface LabelProps {
 export const IconWrapper = styled.div`
   position: absolute;
   top: 5%;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Label = styled.label<LabelProps>`
@@ -37,5 +40,6 @@ export const Input = styled.input`
   margin-bottom: 30px;
   &: focus {
     outline: none;
+    background-color: inherit;
   }
 `;

@@ -15,5 +15,14 @@ const GlobalStyle = createGlobalStyle`
          overflow-y: hidden;
          background: rgba(0, 0, 0, 0.83);
     }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus {
+        -webkit-text-fill-color: #797979;
+         transition: background-color 5000s ease-in-out 0s;
+}
 `;
 export default GlobalStyle;
