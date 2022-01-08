@@ -19,12 +19,10 @@ const MenuItems = ({ isVisible }: Iprops) => {
           item && (
             <S.Container style={style}>
               <S.MenuItemsContainer>
-                <h3>
-                  <span>About</span>
-                </h3>
-                <h3>Projects</h3>
-                <h3>Resume</h3>
-                <h3>Contact</h3>
+                <S.StyledLink to='/'>About</S.StyledLink>
+                <S.StyledLink to='/projects'>Projects</S.StyledLink>
+                <S.StyledLink to='/resume'>Resume</S.StyledLink>
+                <S.StyledLink to='/contact'>Contact</S.StyledLink>
               </S.MenuItemsContainer>
             </S.Container>
           ),

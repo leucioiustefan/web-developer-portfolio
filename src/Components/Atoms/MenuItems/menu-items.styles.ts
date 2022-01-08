@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
+import { Link } from 'react-router-dom';
 
 export const DarkOverlay = styled(animated.div)`
   position: fixed;
@@ -23,7 +24,6 @@ export const Container = styled(animated.div)`
 `;
 
 export const MenuItemsContainer = styled.div`
-  color: #848484;
   background: #363636;
   width: 600px;
   height: 600px;
@@ -34,7 +34,12 @@ export const MenuItemsContainer = styled.div`
   border-radius: 20px;
   text-transform: lowercase;
   cursor: pointer;
-  & h3 {
+  }
+`;
+
+export const StyledLink = styled(Link)`
+text-decoration: none;
+  color: #848484;
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: -1px;
@@ -49,6 +54,4 @@ export const MenuItemsContainer = styled.div`
     &:hover {
       background: #454545;
       color: #747474;
-    }
-  }
 `;
