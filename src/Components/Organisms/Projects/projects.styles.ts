@@ -9,7 +9,6 @@ export const Container = styled.div`
 `;
 
 export const Project = styled.div`
-  cursor: pointer;
   width: 477px;
   opacity: 0.7;
   border-radius: 10px;

@@ -10,7 +10,8 @@ export const Container = styled.div<ProjectProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: ${props => (props.show ? 'flex' : 'none')};
+  transition: all 0.3s ease-in-out;
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
 `;
 
 export const Button = styled.button`
