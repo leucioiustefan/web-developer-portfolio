@@ -1,3 +1,5 @@
+import * as yup from 'yup';
+
 // Timer function to trigger animations
 
 export const countdown = (time: number, setTime: (a: number) => void) => {
@@ -17,3 +19,17 @@ export const renderInputEnum = {
   email: 'email',
   message: 'message',
 };
+
+export const techUsed = [
+  'React.js',
+  'React Router',
+  'Typescript',
+  'Css',
+  'Html',
+];
+
+//Input Validation
+
+export const nameValidation = yup.string().required();
+export const emailValidation = yup.string().email().required();
+export const messageValidation = yup.string().required();

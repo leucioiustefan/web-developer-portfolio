@@ -1,6 +1,6 @@
-import * as S from './custom-input.styles';
-import CustomButton from '../../Atoms/CustomButton/CustomButton';
 import { SyntheticEvent } from 'react';
+import CustomButton from '../../Atoms/CustomButton/CustomButton';
+import * as S from './custom-input.styles';
 
 interface Iprops {
   id: string;
