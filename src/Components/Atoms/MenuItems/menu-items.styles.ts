@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const DarkOverlay = styled(animated.div)`
   position: fixed;
@@ -37,21 +37,50 @@ export const MenuItemsContainer = styled.div`
   }
 `;
 
-export const StyledLink = styled(Link)`
-text-decoration: none;
+export const StyledLink = styled(NavLink)`
+  text-decoration: none;
   color: #848484;
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 0.2s ease-in;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background: #454545;
-      color: #747474;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #454545;
+    color: #747474;
+  }
+  &.active {
+    background: #454545;
+    color: #747474;
+  }
+`;
+
+export const Anchor = styled.a`
+  text-decoration: none;
+  color: #848484;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #454545;
+    color: #747474;
+  }
+  &.active {
+    background: #454545;
+    color: #747474;
+  }
 `;

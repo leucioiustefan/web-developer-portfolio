@@ -21,7 +21,12 @@ const MenuItems = ({ isVisible }: Iprops) => {
               <S.MenuItemsContainer>
                 <S.StyledLink to='/'>About</S.StyledLink>
                 <S.StyledLink to='/projects'>Projects</S.StyledLink>
-                <S.StyledLink to='/resume'>Resume</S.StyledLink>
+                <S.Anchor
+                  href='https://drive.google.com/file/d/1QT6hMS_heroQuKGIWuFOxjSQQyTBv9Em/view?usp=sharing'
+                  target='_blank'
+                >
+                  Resume
+                </S.Anchor>
                 <S.StyledLink to='/contact'>Contact</S.StyledLink>
               </S.MenuItemsContainer>
             </S.Container>

@@ -5,8 +5,8 @@ interface ProjectProps {
 }
 
 export const Container = styled.div<ProjectProps>`
-  width: 477px;
-  margin: 10px auto;
+  width: 400px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;

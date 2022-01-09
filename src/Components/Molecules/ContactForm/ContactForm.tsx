@@ -39,10 +39,11 @@ const ContactForm = () => {
           setIsMessage('');
           setIsTyping(false);
           setRenderInput(renderInputEnum.name);
-          console.log(result.text);
+          result.text = 'Thank you! I will respond shortly.';
+          alert(result.text);
         },
         error => {
-          console.log(error.text);
+          alert(error.text);
         },
       );
   };

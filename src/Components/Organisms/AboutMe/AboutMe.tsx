@@ -14,7 +14,7 @@ const AboutMe = () => {
         <Menu />
         <SocialMedia />
         <AboutMeInfo />
-        <PageControl />
+        <PageControl navigate='/projects' position='relative' left='-5%' />
         <ViewCode />
       </S.Container>
     </>

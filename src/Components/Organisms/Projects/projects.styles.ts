@@ -1,29 +1,27 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   position: relative;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 `;
 
-export const Project = styled.div`
-  width: 477px;
+export const Project = styled(NavLink)`
   opacity: 0.7;
   border-radius: 10px;
   transition: all 0.2s ease-in;
+  margin-left: 10px;
+  margin-top: 15px;
+  background: #333333;
+  text-decoration: none;
 `;
 
 export const Name = styled.h3`
   color: #989898;
   font-size: 1.5rem;
-  width: 100%;
-  height: 100%;
-  text-align: center;
   transition: all 0.2s ease-in;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 1rem;
 `;
