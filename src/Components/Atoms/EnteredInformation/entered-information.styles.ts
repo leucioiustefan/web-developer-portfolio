@@ -4,6 +4,9 @@ export const Container = styled.div`
   margin-bottom: 50px;
   display: flex;
   align-items: center;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const InfoContainer = styled.div`
