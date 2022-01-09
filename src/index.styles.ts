@@ -9,10 +9,16 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+         overflow-x: hidden;
+         overflow-y: hidden;
+    }
+
     body {
         font-family: 'Lato', sans-serif;
          overflow-x: hidden;
          overflow-y: hidden;
+         position: relative;
          background: rgba(0, 0, 0, 0.83);
     }
     input:-webkit-autofill,

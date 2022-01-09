@@ -11,6 +11,9 @@ export const Menu = styled.div<MenuProps>`
   bottom: 90%;
   z-index: 200;
   cursor: pointer;
+  @media (max-width: 700px) {
+    left: 85%;
+  }
   transition: all 0.3s ease-in;
   &:hover {
     transform: scale(1.2);

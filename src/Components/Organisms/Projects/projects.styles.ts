@@ -17,6 +17,9 @@ export const Project = styled(NavLink)`
   margin-top: 15px;
   background: #333333;
   text-decoration: none;
+  @media (max-width: 400px) {
+    width: 300px;
+  }
 `;
 
 export const Name = styled.h3`
@@ -24,4 +27,7 @@ export const Name = styled.h3`
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
   margin-top: 1rem;
+  @media (max-width: 400px) {
+    font-size: 1.2rem;
+  }
 `;

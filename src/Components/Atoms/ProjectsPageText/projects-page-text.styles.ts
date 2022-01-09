@@ -13,6 +13,10 @@ export const Title = styled.h1`
   text-shadow: 2px 2px 0 rgb(0 0 0 / 15%);
   margin-bottom: 1.5rem;
   width: 470px;
+  @media (max-width: 700px) {
+    width: 300px;
+    font-size: 1.5rem;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -20,4 +24,7 @@ export const Subtitle = styled.p`
   line-height: 1.7rem;
   color: #8a8a8a;
   margin-bottom: 15px;
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
 `;
