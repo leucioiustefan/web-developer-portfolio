@@ -1,6 +1,11 @@
 import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { renderInputEnum } from '../../../utils';
+import {
+  renderInputEnum,
+  nameValidation,
+  emailValidation,
+  messageValidation,
+} from '../../../utils';
 import InputNameIcon from '../../Atoms/InputNameIcon/InputNameIcon';
 import InputEmailIcon from '../../Atoms/InputEmailIcon/InputEmailIcon';
 import InputMessageIcon from '../../Atoms/InputMessageIcon/InputMessageIcon';
@@ -34,10 +39,11 @@ const ContactForm = () => {
           setIsMessage('');
           setIsTyping(false);
           setRenderInput(renderInputEnum.name);
-          console.log(result.text);
+          result.text = 'Thank you! I will respond shortly.';
+          alert(result.text);
         },
         error => {
-          console.log(error.text);
+          alert(error.text);
         },
       );
   };

@@ -13,15 +13,15 @@ const EnteredInformation = ({ yourName, yourEmail, yourMessage }: Iprops) => (
   <S.Container>
     <S.InfoContainer>
       <InputNameIcon />
-      <S.Info>{yourName}</S.Info>
+      <S.Info>{yourName.trim() === '' ? 'Name' : yourName}</S.Info>
     </S.InfoContainer>
     <S.InfoContainer>
       <InputEmailIcon />
-      <S.Info>{yourEmail}</S.Info>
+      <S.Info>{yourEmail.trim() === '' ? 'Email' : yourEmail}</S.Info>
     </S.InfoContainer>
     <S.InfoContainer>
       <InputMessageIcon />
-      <S.Info>{yourMessage}</S.Info>
+      <S.Info>{yourMessage.trim() === '' ? 'Message' : yourEmail}</S.Info>
     </S.InfoContainer>
   </S.Container>
 );

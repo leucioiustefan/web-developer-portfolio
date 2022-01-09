@@ -7,7 +7,7 @@ interface PageControlProps {
   top: string;
 }
 
-export const Arrow = styled(NavLink)<PageControlProps>`
+export const ArrowLeft = styled(NavLink)<PageControlProps>`
   position: ${props => props.position};
   left: ${props => props.left};
   top: ${props => props.top};
@@ -28,10 +28,10 @@ export const Arrow = styled(NavLink)<PageControlProps>`
     transition: all 0.4s ease-in-out;
   }
   &:before {
-    transform: rotate(34deg);
+    transform: rotate(-34deg);
   }
   &: after {
-    transform: rotate(-34deg);
+    transform: rotate(34deg);
   }
   &:hover {
     &:before,
@@ -39,10 +39,10 @@ export const Arrow = styled(NavLink)<PageControlProps>`
       margin: 35px 0;
     }
     &:before {
-      transform: rotate(71deg);
+      transform: rotate(-71deg);
     }
     &:after {
-      transform: rotate(-71deg);
+      transform: rotate(71deg);
     }
   }
 `;
