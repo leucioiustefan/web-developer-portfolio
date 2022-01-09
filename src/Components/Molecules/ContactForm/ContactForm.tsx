@@ -1,11 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
-import {
-  renderInputEnum,
-  nameValidation,
-  emailValidation,
-  messageValidation,
-} from '../../../utils';
+import { renderInputEnum } from '../../../utils';
 import InputNameIcon from '../../Atoms/InputNameIcon/InputNameIcon';
 import InputEmailIcon from '../../Atoms/InputEmailIcon/InputEmailIcon';
 import InputMessageIcon from '../../Atoms/InputMessageIcon/InputMessageIcon';
